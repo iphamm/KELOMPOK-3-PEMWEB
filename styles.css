@@ -1,0 +1,385 @@
+html {
+    height: 100%;
+}
+
+/* General Reset */
+body, h1, h2, p, ul, li, nav, table, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 20px; 
+}
+.profile-picture {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* Horizontal Navigation */
+.horizontal-nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.horizontal-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.horizontal-nav a:hover {
+    background-color: #555;
+}
+
+/* Vertical Navigation */
+div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+    
+.vertical-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+    
+/* Change the link color on hover */
+.vertical-nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* section */
+.menu {
+    background-color: #afabab;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #eee;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    margin: 1rem;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+div {
+    line-height: 1.6; 
+    text-align: justify; 
+    margin: 0 5px; 
+    padding: 0; 
+}
+
+div ol, li {
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+div .pic-page1 {
+    display: block;
+    margin: 20px auto;
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+div .pic-page2 {
+    display: block;
+    margin: 20px auto;
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table tr, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    text-align: left;
+}
+
+.data-diri-row td {
+    text-align: center;
+    background-color: #f0f0f0;  
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+form p {
+    text-align: center;
+}
+
+form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Descendant Selector Example */
+main p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* General Sibling Selector Example */
+h2 ~ p {
+    color: #000000;
+    font-style: italic;
+}
+
+/* Class Selector Example */
+aside.vertical-nav .selected {
+    background-color: #444;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.instagram-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.instagram-container blockquote {
+    flex: 1 1 300px; 
+    max-width: 350px;
+}
+
+/* Tampilan dasar body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Artikel */
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* gambar artikel */
+article img {
+    display: block;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Judul artikel */
+article h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #05641a;
+    padding-bottom: 10px;
+}
+
+/* Subjudul */
+article h3 {
+    font-size: 1.6em;
+    color: #05641a;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+article h4 {
+    font-size: 1.0em;
+    color: #5052c4;
+    margin-bottom: 10px;
+}
+
+/* Paragraf */
+article p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Styling untuk unordered list (daftar tak terurut) */
+ul.programming-languages {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul.programming-languages li {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada list item */
+ul.programming-languages li:hover {
+    background-color: #bdc3c7;
+}
+
+/* Styling untuk list item yang lebih spesifik (warna berbeda) */
+ul.programming-languages li:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+ul.programming-languages li:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+
