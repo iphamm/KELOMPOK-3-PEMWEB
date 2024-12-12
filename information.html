@@ -8,22 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Information Page</h1>
+        <h1>KampusKU.com</h1>
+        <nav class="horizontal-nav">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="information.html">Information</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
-    <nav class="horizontal-nav">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="registry.html">Register</a>
-        <a href="profile.html">Profile</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="information.html">Information</a>
-    </nav>
+    <div class="content">
+        <aside class="vertical-nav">
+            <h2>Section</h2>
+            <a href="information.html#section1">Pemrograman</a>
+            <a href="information.html#section2">Matematika</a>
+            <a href="information.html#section3">Basis Data</a>
+        </aside>
     <main>
         <article>
-            <h2>TOP 3 Ilmu mendasar di IT</h2>
+            <h2>TOP 3 Cabang Ilmu Teknik Informatika</h2>
             <p class="intro">
                 Berikut merupakan 3 Ilmu mendasar mengenai IT yang telah kami pelajari
             </p>
+        <section id="section1">
             <h3>1. Pemrograman</h3>
             <img src="img/program.jpg" alt="program">
             <a href="http://www.youtube.com/@sandhikagalihWPU">Belajar disini!</a>
@@ -40,6 +47,8 @@
                 Selain itu, secara lebih spesifik ada pemrograman web. pemrograman web adalah cabang khusus dari pemrograman yang berfokus pada pengembangan aplikasi atau situs web. Pemrograman web mencakup berbagai teknologi dan pendekatan untuk membuat aplikasi yang dapat diakses melalui browser.
             </p>
             <br>
+        </section>
+        <section id="section2">
             <h3>2. Matematika</h3>
             <img src="img/matematika.jpg" alt="matematika">
             <a href="http://www.youtube.com/@ditapramesti">Belajar disini!</a>
@@ -49,7 +58,7 @@
                 Berikut adalah beberapa matakuliah yang berkaitan dengan Matematika yang telah dipelajari:
                 
                 <ul>
-                    <li>
+                    <ol>
                         <h4>1. Kalkulus</h2>
                         <p><strong>Kalkulus</strong> merupakan matakuliah pada semester 1. Kalkulus adalah cabang matematika yang mempelajari konsep perubahan, baik itu perubahan suatu nilai fungsi, grafik, atau sistem dinamis. Dalam konteks Teknik Informatika, kalkulus digunakan untuk menyelesaikan masalah yang melibatkan perubahan yang kontinu, seperti optimisasi, permodelan, dan analisis sistem. Berikut adalah beberapa hal yang dipelajari dalam kalkulus yaitu : </p>
                         <ul>
@@ -57,10 +66,10 @@
                             <li><strong>Turunan (Differential):</strong> Mengukur laju perubahan suatu fungsi. Dalam Informatika, turunan sering digunakan dalam algoritma optimisasi (misalnya, gradient descent).</li>
                             <li><strong>Integral:</strong> Digunakan untuk menghitung luas di bawah kurva atau jumlah akumulatif dari suatu fungsi. Integral memiliki banyak aplikasi dalam pemodelan masalah fisika, ekonomi, dan statistik.</li>
                         </ul>
-                    </li>
+                    </ol>
                 <br>
                 
-                    <li>
+                    <ol>
                         <h4>2. Aljabar Linear</h2>
                         <p><strong>Aljabar Linear</strong> dipelajari pada semester 2, adalah cabang matematika yang berfokus pada studi vektor, ruang vektor, matriks, dan transformasi linear. Mata kuliah ini sangat penting dalam Teknik Informatika karena konsep aljabar linear digunakan dalam berbagai bidang seperti grafik komputer, pembelajaran mesin (machine learning), analisis data, dan pemrosesan citra. Poin-Poin yang Dipelajari dalam Aljabar Linear:</p>
                         <ul>
@@ -68,20 +77,22 @@
                             <li><strong>Matriks: </strong> Struktur data berbentuk tabel yang berisi elemen-elemen yang bisa dioperasikan dengan cara tertentu. Matriks digunakan dalam pemrograman grafis, simulasi, dan algoritma.</li>
                             <li><strong>Sistem Persamaan Linier:</strong> Metode untuk menyelesaikan sistem persamaan linier, yang sering muncul dalam perhitungan numerik dan analisis data.</li>
                         </ul>
-                    </li>
+                    </ol>
                 <br>
                 
-                    <li>
+                    <ol>
                         <h4>3. Metode Numerik</h2>
                         <p><strong>Metode Numerik</strong> dipelajari pada semester 3 ini oleh kami mahasiswa. Metode numerik adalah cabang matematika yang berkaitan dengan penggunaan algoritma untuk menemukan solusi numerik dari masalah-masalah matematika, khususnya yang tidak bisa diselesaikan dengan analitik (persamaan matematis langsung). Di bidang Teknik Informatika, metode numerik digunakan untuk pemrograman komputer, simulasi, dan analisis data. Adapun materi yang dipelajari pada matakuliah ini yaitu :</p>
                         <ul>
                             <li><strong>Penyelesaian Persamaan Non-Linear:</strong> Metode seperti metode Newton-Raphson dan metode bagi dua digunakan untuk mencari akar persamaan non-linear.</li>
                             <li><strong>Penyelesaian Sistem Persamaan Linier: </strong> Menggunakan metode seperti eliminasi Gauss, dan Dekomposisi Segitiga untuk menyelesaikan sistem persamaan linier.</li>
                         </ul>
-                    </li>
+                    </ol>
                 </ul>
             </p>
             <br>
+        </section>
+        <section id="section3">
             <h3>3. Basis Data</h3>
             <img src="img/database.jpg" alt="database">
             <a href="http://www.youtube.com/@ProgrammerZamanNow">Belajar disini!</a>
@@ -96,9 +107,10 @@
             <li><strong>Desain Basis Data:</strong> seperti Entity-Relationship (ER) Diagram: Diagram untuk menggambarkan entitas, relasi antar entitas, atribut, dan kardinalitas hubungan.</li>
         </ul>
             </p>
-
+        </section>
         </article>
     </main>
+    </div>
     <footer>
         <p>&copy; 2024 KELOMPOK 3</p>
     </footer>

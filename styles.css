@@ -20,8 +20,23 @@ body {
 }
 
 /* Header and Footer Styling */
-header, footer {
-    background-color: #333;
+header {
+    background-color: #637F6A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+footer {
+    background-color: #637F6A;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -40,14 +55,16 @@ header, footer {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    border: 5px solid #3A5311;
 }
 
 /* Horizontal Navigation */
 .horizontal-nav {
-    background-color: #444;
+    background-color: #728C69;
     display: flex;
     justify-content: center;
     padding: 0.5rem 0;
+    border-radius: 5px;
 }
 
 .horizontal-nav a {
@@ -59,49 +76,41 @@ header, footer {
 }
 
 .horizontal-nav a:hover {
-    background-color: #555;
+    background-color: #3A5311;
+    border-radius: 5px;
 }
 
 /* Vertical Navigation */
-div ul {
+div aside {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
 }
-    
-.vertical-nav li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-    
-/* Change the link color on hover */
-.vertical-nav li a:hover {
-    background-color: #555;
-    color: white;
-}
 
-/* section */
-.menu {
-    background-color: #afabab;
+.vertical-nav {
+    background-color: #637F6A;
     padding: 1rem;
     flex-shrink: 0;
 }
 
-.menu a {
+.vertical-nav h2 {
+    text-align: center;
+    color: white;
+}
+
+.vertical-nav a {
     display: block;
     color: #333;
     text-decoration: none;
     margin: 0.5rem 0;
     padding: 0.5rem;
     background-color: #f9f9f9;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-.menu a:hover {
+.vertical-nav a:hover {
     background-color: #eee;
 }
 
@@ -121,6 +130,9 @@ main {
 
 main h2 {
     margin-bottom: 1rem;
+}
+main h1 {
+    text-align: center;
 }
 
 iframe {
@@ -172,7 +184,7 @@ div .pic-page2 {
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery-grid img:hover {
@@ -200,52 +212,95 @@ table tr, table td {
 }
 
 /* Form Styling */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-bottom: 100px;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
-    max-width: 400px;
-    margin: 1rem auto;
+    max-width: 400px; 
+    width: 90%; 
     padding: 2rem;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    box-sizing: border-box; 
 }
-
+/* Label styling */
 form label {
     display: block;
-    margin: 0.5rem 0 0.2rem;
+    margin: 0.5rem 0 0.3rem;
     font-weight: bold;
+    color: #333;
 }
 
+/* Input, select, textarea, dan button styling */
 form input, form select, form textarea, form button {
-    width: 100%;
-    padding: 0.5rem;
+    width: 100%; 
+    padding: 0.8rem; 
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; 
 }
 
+/* Placeholder styling */
+form input::placeholder, form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Button styling */
 form button {
-    background-color: #444;
-    color: #fff;
+    background-color: #3A5311;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #728C69;
+    transform: scale(1.02);
 }
 
+form h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraf styling */
 form p {
     text-align: center;
+    font-size: 14px;
+    color: #666;
 }
 
+/* Link styling */
 form a {
     color: #007bff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 form a:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
+
 
 /* Descendant Selector Example */
 main p {
@@ -333,7 +388,7 @@ article h3 {
 
 article h4 {
     font-size: 1.0em;
-    color: #5052c4;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -374,7 +429,7 @@ ul.programming-languages li:nth-child(even) {
     background-color: #f4f4f4;
 }
 
-ul {
+ul, ol {
     padding-left: 20px;
     font-size: 16px;
 }

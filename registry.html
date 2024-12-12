@@ -7,19 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Register Page</h1>
-    </header>
-    <nav class="horizontal-nav">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="registry.html">Register</a>
-        <a href="profile.html">Profile</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="information.html">Information</a>
-    </nav>
     <main>
-        <form action="profile.html" method="POST">
+    <div class="register-form">
+        <form>
+            <h2>Register</h2>
             <label for="fullname">Nama Lengkap:</label>
             <input type="text" id="fullname" name="fullname" required>
             <label for="npm">NPM:</label>
@@ -39,10 +30,9 @@
             <textarea id="description" name="description" rows="4"></textarea>
             <button type="submit">Register</button>
             <p>Sudah punya account? Login disini <a href="login.html">Login</a></p>
+            <p>Back to Home <a href="index.html">Home</a></p>
         </form>
+    </div>
     </main>
-    <footer>
-        <p>&copy; 2024 KELOMPOK 3</p>
-    </footer>
 </body>
 </html>
